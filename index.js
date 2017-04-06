@@ -39,23 +39,17 @@ function timeSpanMerge(str1,str2,operator) {
     var aarrays = a.toArrays()
 
     var outstring = ''
-    for (let pairs of aarrays){
+    for (var i =0;i<aarrays.length;i++){
+        var pairs = aarrays[i]
         var timestr1 = zfill(pairs[0])
         var timestr2 = zfill(pairs[1])
-        outstring += `${timestr1.substr(0,2)}:${timestr1.substr(2,2)}:${timestr1.substr(4,2)}-`
-        outstring += `${timestr2.substr(0,2)}:${timestr2.substr(2,2)}:${timestr2.substr(4,2)} `
+        outstring += timestr1.substr(0,2)+':'+timestr1.substr(2,2)+':'+ timestr1.substr(4,2)+'-'+
+            timestr2.substr(0,2) + ':' + timestr2.substr(2,2) + ':' +timestr2.substr(4,2) +' '
     }
 
     return outstring.trim()
 }
 
-function test(){
-    var str1 = "00:00:00-09:00:00 11:00:00-12:00:00 13:00:00-14:00:00"
-    var str2 = timeSpanMerge(str1,"11:57:00-13:22:00",'or')
-    console.log(str2)
-    var str3 = timeSpanMerge(str2,"13:20:00-13:30:00",'sub')
-    console.log(str3)
-}
 
 if (module){
     module.exports = timeSpanMerge
