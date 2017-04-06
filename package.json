@@ -1,6 +1,6 @@
 {
   "name": "time_span_merge",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a js tool merging time span string",
   "main": "index.js",
   "scripts": {
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/xcstream/time_span_merge/issues"
   },
-  "homepage": "https://github.com/xcstream/time_span_merge#readme"
+  "homepage": "https://github.com/xcstream/time_span_merge#readme",
+  "dependencies": {
+    "xspans": "^1.0.0"
+  }
 }
