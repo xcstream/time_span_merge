@@ -12,8 +12,10 @@ function timeSpanMerge(str1,str2,operator) {
     var s2 = str2.split('-')
     var s1list = str1.split(' ')
     var num1list = s1list.filter(
-        x => x.length == 17
-    ).map(x=>{
+        function(x){
+            return x.length == 17
+        }
+    ).map(function(x){
         var s1 = x.split('-')
         var num11 = parseInt(s1[0].replace(/:/g,''))
         var num12 = parseInt(s1[1].replace(/:/g,''))
