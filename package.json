@@ -1,6 +1,6 @@
 {
   "name": "time_span_merge",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "a js tool merging time span string",
   "main": "index.js",
   "scripts": {
