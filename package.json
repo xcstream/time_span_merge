@@ -1,0 +1,19 @@
+{
+  "name": "time_span_merge",
+  "version": "1.0.0",
+  "description": "a js tool merging time span string",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xcstream/time_span_merge.git"
+  },
+  "author": "xcstream",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xcstream/time_span_merge/issues"
+  },
+  "homepage": "https://github.com/xcstream/time_span_merge#readme"
+}
